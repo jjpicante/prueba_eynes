@@ -36,6 +36,8 @@ def ordenar_lista(elem):
     Ejemplo:
         >>> lista = [{'id': 1, 'edad': 25}, {'id': 2, 'edad': 42}, {'id': 3, 'edad': 18}]
         >>> ordenar_lista(lista) == [{'id': 2, 'edad': 42}, {'id': 1, 'edad': 25}, {'id': 3, 'edad': 18}]
+        La persona más joven es la número 3 y tiene 18 años.
+        La persona con más edad es la número 2 y tiene 42 años.
         True
     """
     elem.sort(key=lambda e: e['edad'], reverse=True)
